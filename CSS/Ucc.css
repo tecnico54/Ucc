@@ -168,7 +168,7 @@ img {
     transition:.3s;
 }
 .ampliar{
-    transform:scale(4);
+    transform:scale(3);
     z-index:1000;
     position:relative;
 }
