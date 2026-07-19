@@ -1,4 +1,19 @@
 function mostrarHorarioHoy(){
+const meses = [
+"Enero","Febrero","Marzo","Abril","Mayo","Junio",
+"Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"
+];
+const mesActual = new Date().getMonth(); // 0 = Enero
+const contenedor = document.getElementById("horarioHoy");
+// Meses de vacaciones
+if(mesActual === 5 || mesActual === 6 || mesActual === 11){
+    contenedor.innerHTML = `
+        <h3>${meses[mesActual]}</h3>
+        <p><b>Actualmente estás en vacaciones.</b></p>
+        <p>😄 Disfruta tu descanso y prepárate para el próximo semestre.</p>
+    `;
+    return;
+}
 const dias = [
 "Domingo",
 "Lunes",
@@ -9,50 +24,32 @@ const dias = [
 "Sábado"
 ];
 const hoy = dias[new Date().getDay()];
-const contenedor = document.getElementById("horarioHoy");
 const clasesHoy = materias.filter(materia => materia.dia === hoy);
 if(clasesHoy.length === 0){
-	contenedor.innerHTML = `
-		<h3>Hoy es ${hoy}</h3>
-		<p class="mensaje">
-		🎉 Hoy no tienes clases.
-		</p>
-		<p>Aprovecha para descansar o estudiar 😄</p>	
-`;
-	return;
+    contenedor.innerHTML = `
+        <h3>Hoy es ${hoy}</h3>
+        <p>No tienes clases hoy.</p>
+        <p>📚 Aprovecha para estudiar o descansar.</p>
+    `;
+    return;
 }
-//Contar cuántas clases hay hoy
-const cantidad = clasesHoy.length;
-let html = `
-	<h3>Hoy es ${hoy}</h3>
-`;
-//Mensaje según la cantidad de clases
-if(cantidad == 1){
-	html += `
-	<p class="mensaje">
-	📚 Hoy tienes <b>1 clase</b>.
-	</p>
-	<p><b>¡Muchos éxitos en la universidad!</b> 💪</p>
-	`;
+let html = `<h3>Hoy es ${hoy}</h3>`;
+if(clasesHoy.length === 1){
+    html += `<p>📖 Hoy tienes <b>1 clase</b>.</p>`;
 }else{
-	html += `
-	<p class="mensaje">
-	📚 Hoy tienes <b>${cantidad} clases</b>.
-	</p>
-	<p><b>¡Muchos éxitos en la universidad!</b> 💪</p>
-	`;
+	html += `<p>📖 Hoy tienes <b>${clasesHoy.length} clases</b>.</p>`;
 }
-//Mostrar las materias
+html += `<p>✨ ¡Muchos éxitos en la universidad!</p><br>`;
 clasesHoy.forEach(materia=>{
-	html += `
-	<div class="materia">
-		<h4>${materia.nombre}</h4>
-		<p><b>Hora:</b> ${materia.hora}</p>
-		<p><b>Bloque:</b> ${materia.bloque}</p>
-		<p><b>Salón:</b> ${materia.salon}</p>
-	</div>
-	<hr>
-	`;
+html += `
+<div class="materia">
+    <h4>${materia.nombre}</h4>
+    <p><b>Hora:</b> ${materia.hora}</p>
+    <p><b>Bloque:</b> ${materia.bloque}</p>
+    <p><b>Salón:</b> ${materia.salon}</p>
+</div>
+<hr>
+`;
 });
 contenedor.innerHTML = html;
 }
