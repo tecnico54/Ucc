@@ -6,7 +6,7 @@ const meses = [
 const mesActual = new Date().getMonth(); // 0 = Enero
 const contenedor = document.getElementById("horarioHoy");
 // Meses de vacaciones
-if(mesActual === 6 || mesActual === 7 || mesActual === 11 || mesActual === 12){
+if(mesActual === 5 || mesActual === 6 || mesActual === 11){
     contenedor.innerHTML = `
         <p><b>Actualmente estás en vacaciones.</b></p>
         <p>😄 Disfruta tu descanso y prepárate para el próximo semestre.</p>
