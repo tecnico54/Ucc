@@ -1,15 +1,15 @@
 function mostrarHorarioHoy(){
     const hoy = new Date();
-    const mes = hoy.getMonth() + 1; // Enero = 1
+    const mes = hoy.getMonth()
     const dia = hoy.getDate();
     const contenedor = document.getElementById("horarioHoy");
     // ======== FECHAS DEL AÑO ACADÉMICO ========
     // Primer semestre
-    const inicioSemestre1 = { mes: 1, dia: 1 };
-    const finSemestre1    = { mes: 5, dia: 31 };
+    const inicioSemestre1 = { mes: 0, dia: 1 };
+    const finSemestre1    = { mes: 4, dia: 31 };
     // Segundo semestre
-    const inicioSemestre2 = { mes: 8, dia: 1 };
-    const finSemestre2    = { mes: 11, dia: 19 };
+    const inicioSemestre2 = { mes: 7, dia: 1 };
+    const finSemestre2    = { mes: 10, dia: 18 };
     // =========================================
     function dentroDelRango(inicio, fin){
         if(mes < inicio.mes || mes > fin.mes){
