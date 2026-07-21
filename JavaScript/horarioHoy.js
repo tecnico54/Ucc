@@ -8,8 +8,8 @@ function mostrarHorarioHoy(){
     const inicioSemestre1 = { mes: 0, dia: 1 };
     const finSemestre1    = { mes: 4, dia: 31 };
     // Segundo semestre
-    const inicioSemestre2 = { mes: 7, dia: 1 };
-    const finSemestre2    = { mes: 10, dia: 18 };
+    const inicioSemestre2 = { mes: 7, dia: 3 };
+    const finSemestre2    = { mes: 10, dia: 20 };
     // =========================================
     function dentroDelRango(inicio, fin){
         if(mes < inicio.mes || mes > fin.mes){
