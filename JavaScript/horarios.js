@@ -5,7 +5,7 @@ const materias = [
     semestre: 7,
     hora: "8:00 - 12:00",
     bloque: "1",
-    salon: ""
+    salon: "Bloque 1-605"
 },
 {
     nombre: "Calculo Integrar",
@@ -13,7 +13,7 @@ const materias = [
     semestre: 2,
     hora: "14:00 - 17:00",
     bloque: "1",
-    salon: ""
+    salon: "Bloque 1-605"
 },
 {
     nombre: "Seguridad Informatica",
@@ -21,7 +21,7 @@ const materias = [
     semestre: 8,
     hora: "18:00 - 21:00",
     bloque: "1",
-    salon: ""
+    salon: "Bloque 1-605"
 },
 {
     nombre: "Gestiones de Proyectos",
@@ -29,7 +29,7 @@ const materias = [
     semestre: 8,
     hora: "16:00 - 18:00",
     bloque: "1",
-    salon: ""
+    salon: "Bloque 1-705"
 },
 {
     nombre: "Metodologia de Software Colaborativo",
@@ -37,6 +37,6 @@ const materias = [
     semestre: 7,
     hora: "6:00 - 8:00",
     bloque: "1",
-    salon: ""
+    salon: "Bloque 1-605"
 }
 ];
