@@ -65,7 +65,7 @@ function mostrarHorarioHoy(){
         html += `
             <div class="materia">
                 <h4>${materia.nombre}</h4>
-<p><b>Semestre:</b> ${materia.semestre}</p>
+                <p><b>Semestre:</b> ${materia.semestre}</p>
                 <p><b>Hora:</b> ${materia.hora}</p>
                 <p><b>Bloque:</b> ${materia.bloque}</p>
                 <p><b>Salón:</b> ${materia.salon}</p>
