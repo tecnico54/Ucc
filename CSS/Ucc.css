@@ -1,4 +1,8 @@
 /*Estilos para la página*/
+*{
+    padding: 0;
+    margin: 0;
+}
 .E{
     background-color: white;
 }
@@ -14,13 +18,196 @@
 .M{
     color: black;
 }
-header > nav{
-    max-width: 9000px;
+h1{
+    color: white;
+    font-size: 200%;
 }
-header > nav > table{
+h3{
+    color: red;
+    text-align: center;
+    font-size: 300%;
+}
+video{
     width: 100%;
-    border: 2;
-    background-color: black;
+    height: 70%;
+}
+h2{
+    color: red;
+    font-size: 200%;
+}
+#contenedor{
+    width: 90%;
+    max-width: 1024px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*Fecha y Hora*/
+#fecha{
+  font-size: 30px;
+  text-align: left;
+  color: white;
+}
+#reloj{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+}
+/*Menú*/
+.navbar{
+    max-width: 9000px;
+    background:#004080;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding:10px 20px;
+}
+.info{
+    color:white;
+}
+.menu-horizontal_pequeno{
+    display:flex;
+    list-style:none;
+    gap:10px;
+    margin:0;
+    padding:0;
+}
+.menu-horizontal_pequeno .P .A{
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    display:block;
+    transition:.3s;
+}
+.menu-horizontal_pequeno .P .A:hover{
+    background:white;
+    color:#004080;
+    border-radius:5px;
+}
+#menu-toggle{
+    display:none;
+}
+.hamburger{
+    display:none;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+/*Carrusel*/
+.carousel{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    position:relative;
+    overflow:hidden;
+}
+.slide{
+    display:none;
+    text-align:center;
+}
+.slide.active{
+    display:block;
+}
+.slide .H{
+    color:red;
+    margin-bottom:15px;
+}
+.slide img{
+    width:100%;
+    max-height:600px;
+    object-fit:contain;
+    border-radius:10px;
+}
+.prev, .next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:40px;
+    border:none;
+    background:rgba(0,0,0,.5);
+    color:white;
+    width:50px;
+    height:60px;
+    cursor:pointer;
+    border-radius:8px;
+}
+.prev{
+    left:10px;
+}
+.next{
+    right:10px;
+}
+.prev:hover, .next:hover{
+    background:black;
+}
+@media screen and (max-width: 980px){
+    #contenedor{
+        width: 90%;
+    }
+    #contenido{
+        width: 60%;
+    }
+    #barra_lateral{
+        width:30%;
+    }
+}
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+        align-items:stretch;
+    }
+    .hamburger{
+        display:block;
+        text-align:right;
+        padding:10px;
+    }
+    .menu-horizontal_pequeno{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        background:#004080;
+    }
+    .menu-horizontal_pequeno .P .A{
+        width:100%;
+    }
+    .menu-horizontal_pequeno .P .A{
+        border-top:1px solid rgba(255,255,255,.2);
+    }
+    #menu-toggle:checked + .hamburger + .menu-horizontal_pequeno{
+        display:flex;
+    }
+   }
+@media screen and (max-width: 480px){
+    #encabezado{
+        height: auto;
+    }
+    #contenido{
+        width: auto;
+    }
+    #barra_lateral{
+        display:none;
+    }
+}/*Estilos para la página*/
+*{
+    padding: 0;
+    margin: 0;
+}
+.E{
+    background-color: white;
+}
+.D{
+    background-color: #2E6D85;
+}
+.C{
+    background-color: green;
+}
+.Color{
+    background-color: #51BFC4;
+}
+.M{
+    color: black;
 }
 h1{
     color: white;
@@ -35,19 +222,117 @@ video{
     width: 100%;
     height: 70%;
 }
-ul > li{
-    color: white;
-    font-size: 100%;
-    
-}
-body{
-    background-color: white;
-}
 h2{
     color: red;
     font-size: 200%;
 }
-/*Adaptamiento de Pantalla*/
+#contenedor{
+    width: 90%;
+    max-width: 1024px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*Fecha y Hora*/
+#fecha{
+  font-size: 30px;
+  text-align: left;
+  color: white;
+}
+#reloj{
+  font-size: 30px;
+  color: white;
+  text-align: left;
+}
+/*Menú*/
+.navbar{
+    max-width: 9000px;
+    background:#004080;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding:10px 20px;
+}
+.info{
+    color:white;
+}
+.menu-horizontal_pequeno{
+    display:flex;
+    list-style:none;
+    gap:10px;
+    margin:0;
+    padding:0;
+}
+.menu-horizontal_pequeno .P .A{
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    display:block;
+    transition:.3s;
+}
+.menu-horizontal_pequeno .P .A:hover{
+    background:white;
+    color:#004080;
+    border-radius:5px;
+}
+#menu-toggle{
+    display:none;
+}
+.hamburger{
+    display:none;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+/*Carrusel*/
+.carousel{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    position:relative;
+    overflow:hidden;
+}
+.slide{
+    display:none;
+    text-align:center;
+}
+.slide.active{
+    display:block;
+}
+.slide .H{
+    color:red;
+    margin-bottom:15px;
+}
+.slide img{
+    width:100%;
+    max-height:600px;
+    object-fit:contain;
+    border-radius:10px;
+}
+.prev, .next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:40px;
+    border:none;
+    background:rgba(0,0,0,.5);
+    color:white;
+    width:50px;
+    height:60px;
+    cursor:pointer;
+    border-radius:8px;
+}
+.prev{
+    left:10px;
+}
+.next{
+    right:10px;
+}
+.prev:hover, .next:hover{
+    background:black;
+}
 @media screen and (max-width: 980px){
     #contenedor{
         width: 90%;
@@ -59,6 +344,32 @@ h2{
         width:30%;
     }
 }
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+        align-items:stretch;
+    }
+    .hamburger{
+        display:block;
+        text-align:right;
+        padding:10px;
+    }
+    .menu-horizontal_pequeno{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        background:#004080;
+    }
+    .menu-horizontal_pequeno .P .A{
+        width:100%;
+    }
+    .menu-horizontal_pequeno .P .A{
+        border-top:1px solid rgba(255,255,255,.2);
+    }
+    #menu-toggle:checked + .hamburger + .menu-horizontal_pequeno{
+        display:flex;
+    }
+   }
 @media screen and (max-width: 480px){
     #encabezado{
         height: auto;
@@ -69,109 +380,4 @@ h2{
     #barra_lateral{
         display:none;
     }
-	.ampliar{
-    transform:scale(1);
-  }
-}
-#contenedor {
-    width: 90%;
-    max-width: 1024px;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-/*Menú*/
-	 *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "open sans";
-    }
-    nav{
-        max-width: 900px;
-        margin: auto;
-        background-color: black;
-        font-size: 20px;
-        margin-top: 0;
-    }
-    .menu-horizontal{
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-    }
-    .menu-horizontal > li > a{
-        display: green;
-        padding: 15px 15px 15px 20px;
-        color: white;
-        text-decoration: none;
-    }
-    .menu-horizontal > li:hover{
-        background-color: black;
-  }
-  /*Fecha y Hora*/
-  *{
-        padding: 0;
-        margin: 0;
-    }
-    legend{
-  font-size: 30px;
-  text-align: left;
-  color: white;
-}
-#reloj{
-  font-size: 30px;
-  color: white;
-  text-align: left;
-}
-/*Horarios*/
-.Fondo{
-    width:85%;
-    max-width:1100px;
-    margin:40px auto;
-    background:rgba(30,120,220,0.50);
-    border-radius:18px;
-    padding:35px;
-    text-align:center;
-    color:white;
-    box-shadow:0 10px 35px rgba(0,0,0,.35);
-    margin:0;
-    padding:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed
-}
-.Clases{
-    font-size:52px;
-    color:white;
-}
-/*Tarjeta del horario*/
-#horarioHoy{
-    margin:35px auto;
-    width:60%;
-    min-width:300px;
-    background:white;
-    color:#222;
-    border-radius:15px;
-    padding:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,.25);
-}
-/*Materia*/
-.materia{
-    font-size:28px;
-    color:#1565C0;
-    font-weight:bold;
-    margin-bottom:12px;
-}
-/*IMG*/
-.IMG{
-    width:100px;
-    cursor:pointer;
-    transition:.3s;
-}
-.ampliar{
-    transform:scale(3);
-    z-index:1000;
-    position:relative;
 }
