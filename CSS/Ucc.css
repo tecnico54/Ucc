@@ -111,7 +111,8 @@ img{
     display:block;
 }
 .slide .H{
-    color:red;
+    font-size: 70px;
+    color:#004080;
     margin-bottom:15px;
 }
 .slide img{
