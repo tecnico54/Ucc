@@ -334,7 +334,7 @@ img{
 .prev:hover, .next:hover{
     background:black;
 }
-@media screen and (max-width: 980px){
+@media screen and (max-width: 1080px){
     #contenedor{
         width: 90%;
     }
