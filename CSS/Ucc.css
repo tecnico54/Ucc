@@ -344,8 +344,6 @@ img{
     #barra_lateral{
         width:30%;
     }
-}
-@media(max-width:768px){
     .navbar{
         flex-direction:column;
         align-items:stretch;
