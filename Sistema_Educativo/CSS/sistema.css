@@ -1,0 +1,115 @@
+/*Adaptamiento de Pantalla*/
+@media screen and (max-width: 980px){
+    #contenedor{
+        width: 90%;
+    }
+    #contenido{
+        width: 60%;
+    }
+    #barra_lateral{
+        width:30%;
+    }
+}
+@media screen and (max-width: 480px){
+    #encabezado{
+        height: auto;
+    }
+    #contenido{
+        width: auto;
+    }
+    #barra_lateral{
+        display:none;
+    }
+}
+#contenedor {
+    width: 90%;
+    max-width: 1024px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*Menú*/
+	*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "open sans";
+    }
+    nav{
+        max-width: 900px;
+        margin: auto;
+        background-color: black;
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .menu-horizontal{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu-horizontal > li > a{
+        display: green;
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none;
+    }
+    .menu-horizontal > li:hover{
+        background-color: black;
+    }
+    .menu-vertical{
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 200px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+  /*Fecha y Hora*/
+  *{
+        padding: 0;
+        margin: 0;
+    }
+    legend{
+  font-size: 30px;
+  text-align: center;
+}
+#reloj{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+body{
+    background-color: black;
+}
+legend{
+    color: white;
+    text-align: left;
+}
+nav > table{
+    border: 2;
+    width: 100%;
+    color: black;
+}
+td{
+    font-size: 300%;
+    color: white;
+    text-align: center;
+}
+nav{
+    max-width: 9000px;
+}
+li{
+    font-size: 50%;
+}
