@@ -36,6 +36,20 @@
     font-size:30px;
     cursor:pointer;
 }
+h1, h2{
+    font-size: 50px;
+}
+.C{
+    background: rgba(0, 200, 0);
+    width: 500px;
+    height: 5vh;
+    text-align: center;
+    border: 2px outset rgba(0, 255, 0);
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
 @media screen and (max-width: 1168px){
     /*Menú*/
     .navbar{
