@@ -9,29 +9,36 @@
 	</head>
 		<body background="IMG/SDE.png">
 			<header>
-				<nav>
-					<table>
-						<td>
-							<legend id="fecha"></legend>
-							<h1 id="reloj" style="text-align: left;"></h1>
-						</td>
-						<td>
-							<ul class="menu-horizontal">
-								<li><a href="HTML/SENA/Sena.html">SENA</a>
-									<li><a href="HTML/Sapiencia-Compuestudio/compuestudio.html">Compuestudio</a></li>
-									<li><a href="HTML/SMART_ACADEMY/SMART.html">Academia de idiomas - SMART</a></li>
-							</ul>
-						</td>
-					</table>
+				<nav class="navbar">
+			    	<input type="checkbox" id="menu-toggle">
+			    	<label for="menu-toggle" class="hamburger">
+			        	☰
+			    	</label>
+			    	<ul class="menu-horizontal_pequeno">
+			        	<li class="P"><a class="A" href="HTML/SENA/Sena.html">SENA</a></li>
+			        	<li class="P"><a class="A" href="HTML/Sapiencia-Compuestudio/compuestudio.html">CompuEstudio</a></li>
+			        	<li class="P"><a class="A" href="HTML/SMART_ACADEMY/SMART.html">Academia de idiomas - SMART</a></li>
+					</ul>
 				</nav>
 			</header>
-			<br><br><br>
+			<br><br>
 			<center>
-				<h1>
-					<font color="#f00" size="50px">Sistema de</font><br>
-					<font color="#48e" size="50px">Educación</font>
-				</h1>
+				<h1><b>Plan</b></h1>
+					<table>
+						<td class="T">Lunes</td>
+						<td class="T">Martes</td>
+						<td class="T">Miércoles</td>
+						<td class="T">Jueves</td>
+						<td class="T">Viernes</td>
+						<td class="T">Sábado</td>
+						<tr></tr>
+						<td class="T">Universidad 8–12 → resto del día para estudio/descanso</td>
+						<td class="T">CompuEstudio 8-12 → Universidad 14–21</td>
+						<td class="T">CompuEstudio 8–12 → Universidad 16–18</td>
+						<td class="T">CompuEstudio 8–12 → Smart en la tarde</td>
+						<td class="T">CompuEstudio 8–12 → Smart en la tarde</td>
+						<td class="T">Universidad 6–8 → Smart después</td>
+					</table>
 			</center>
 		</body>
-			</html>	
-				<script src="JavaScript/hora&fecha.js"></script>
+			</html>
