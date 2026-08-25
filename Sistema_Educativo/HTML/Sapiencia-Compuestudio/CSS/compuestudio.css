@@ -43,7 +43,7 @@
     text-align: center;
     border: 2px outset #000;
 }
-h1{
+.CE{
     color: #f00;
     font-size: 50px;
 }
@@ -77,6 +77,9 @@ h1{
      .T{
         font-size: 10px;
         width: 70px;
-        height: 70px;
+        height: 70vh;
+    }
+    .CE{
+        font-size: 500px;
     }
 }
