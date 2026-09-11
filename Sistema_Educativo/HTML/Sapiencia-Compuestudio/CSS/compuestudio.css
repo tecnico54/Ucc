@@ -92,4 +92,8 @@
     .CE{
         font-size: 50px;
     }
+    /*Recuadro*/
+    .Contenedor{
+       width: 700px;
+      }
 }
